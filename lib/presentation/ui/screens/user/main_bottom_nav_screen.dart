@@ -1,7 +1,6 @@
 
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
-import 'package:health_hub/presentation/state_holder/all_doctor_data_controller.dart';
 import 'package:health_hub/presentation/state_holder/department_data_controller.dart';
 import 'package:health_hub/presentation/ui/screens/user/home_screen.dart';
 import 'package:health_hub/presentation/ui/utilis/color_palette.dart';
@@ -35,7 +34,6 @@ class _MainBottomNavScreenState extends State<MainBottomNavScreen> {
   void initState() {
     // TODO: implement initState
     WidgetsBinding.instance.addPostFrameCallback((_) {
-       Get.find<AllDoctorDataController>().getDoctorsData();
        Get.find<DepartmentDataController>().getDepartmentData();
     });
     super.initState();

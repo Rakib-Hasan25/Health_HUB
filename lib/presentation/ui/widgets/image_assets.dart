@@ -9,10 +9,6 @@ class ImageAssets{
 
 
 
-
-
-
-
    static const List homeSliderImages = [
      'assets/images/home_slider_image.jpg',
      'assets/images/home_slider_image_1.jpg',
@@ -40,4 +36,16 @@ class ImageAssets{
 
 
    ];
+
+
+  static const List adminDashboardCategoryImages = [
+    'assets/images/doctor.png',
+    'assets/images/Hospital Treatment.png',
+    'assets/images/hospitalDepartment.png',
+    'assets/images/doctorAppointment.png',
+    'assets/images/payment.png',
+    'assets/images/logout.png',
+
+
+  ];
 }

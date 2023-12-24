@@ -4,6 +4,8 @@ class TString{
 
   static const List featureList = ["Find Doctor","Hospital Treatment","BMI Calculator","Book Treatment","Online Pharmacy",];
   static const List categoryList = ["MyDoctor", "MyAppointment","Helpline","MyReport","MyOrder"];
+  static const List adminDashboardCategoryList = ["All Doctors", "All Patient","All Department","All Appointment Details","Payment Details","Logout"];
+
 
 
 

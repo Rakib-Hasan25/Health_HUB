@@ -160,10 +160,7 @@ class _SignUpScreenState extends State<SignUpScreen> {
                           ], onChanged: (value){
                           _value = value!;
                           setState(() {
-
                           });
-
-
                       }
                       ),
                       if(_value== "Doctor")

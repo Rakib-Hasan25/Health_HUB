@@ -1,6 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:get/get.dart';
-import 'package:health_hub/presentation/state_holder/all_doctor_data_controller.dart';
 import 'package:health_hub/presentation/ui/widgets/doctor_catagory_Card.dart';
 import 'package:health_hub/presentation/ui/widgets/image_assets.dart';
 

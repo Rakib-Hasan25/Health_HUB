@@ -4,31 +4,35 @@
 
 import 'package:cloud_firestore/cloud_firestore.dart';
 
-class AllDoctors{
+class DoctorInformation{
  final String name;
   final String email;
-  final String specialities;
+  final String degree;
+  final String departmentId;
 
-  AllDoctors({
+  DoctorInformation({
     required this.email,
     required this.name,
-    required this.specialities
+    required this.degree,
+    required this.departmentId,
 });
 
 
   Map<String, dynamic> toJson() => {
     "name":name,
     "email":email,
-    "specialities":specialities
+    "degree":degree,
+    "departmentId":departmentId
   };
 
-  static AllDoctors fromSnap(DocumentSnapshot snap) {
+  static DoctorInformation fromSnap(DocumentSnapshot snap) {
     var snapshot = snap.data() as Map<String, dynamic>;
 
-    return AllDoctors(
+    return DoctorInformation(
       name: snapshot['name'] ?? '',
       email: snapshot['email'] ?? '',
-      specialities: snapshot['specialities']?? '',
+      degree: snapshot['degree']?? '',
+      departmentId: snapshot['departmentId']??'',
     );
   }
 }

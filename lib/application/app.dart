@@ -2,6 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:health_hub/application/state_holder_binder.dart';
+import 'package:health_hub/presentation/ui/screens/admin/Admin_Dashboard.dart';
 import 'package:health_hub/presentation/ui/screens/splash_screen.dart';
 import 'package:health_hub/presentation/ui/screens/user/home_screen.dart';
 import 'package:health_hub/presentation/ui/screens/user/main_bottom_nav_screen.dart';
@@ -24,7 +25,7 @@ class _HealthHubState extends State<HealthHub> {
       debugShowCheckedModeBanner:  false,
       initialBinding: StateHolderBinder(),
       // home: SplashScreen(),
-      home:MainBottomNavScreen(),
+      home:AdminDashBoard(),
       theme: ThemeData(
 
            primarySwatch: MaterialColor(

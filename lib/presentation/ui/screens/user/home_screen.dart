@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:health_hub/presentation/ui/screens/auth/login_page_as_user.dart';
 import 'package:health_hub/presentation/ui/screens/user/developer_screen.dart';
 import 'package:health_hub/presentation/ui/screens/user/helpline_page.dart';
 import 'package:health_hub/presentation/ui/utilis/textString.dart';
@@ -147,6 +148,11 @@ class _HomeScreenState extends State<HomeScreen> {
                       thickness: 2,
                     ),
                     ListTile(
+                      onTap:(){
+                       Get.offAll(LoginPage());
+                       Get.snackbar("Logout", "You have successfully Logged outed");
+                      }
+                      ,
                       leading: Icon(
                         Icons.logout,
                         size: 27,
